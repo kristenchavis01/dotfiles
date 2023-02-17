@@ -1,0 +1,6 @@
+" My configuration is compatible with both vim and neovim
+" On Linux/macOS:
+" ln -s /path/to/dotfiles/.config/nvim ~/.vim
+" On Windows:
+" mklink /D C:\Users\username\vimfiles \path\to\dotfiles\.config\nvim
+execute 'source ' . fnamemodify(custom#utils#stdpath('config'), ':p') . 'init.vim'
